@@ -16,7 +16,13 @@ int main(void){
                                                        &(struct InternalNode){6, NULL, NULL}}};
     
     
-    printf("Tree Root data: %d\n", (&Tree)->left->left->data);
+    printf("Tree root i.e. node 0: %d\n", (&Tree)->data);
+    printf("Tree node 1: %d\n", (&Tree)->left->data);
+    printf("Tree node 2: %d\n", (&Tree)->left->left->data);
+    printf("Tree node 3: %d\n", (&Tree)->left->right->data);
+    printf("Tree node 4: %d\n", (&Tree)->right->data);
+    printf("Tree node 5: %d\n", (&Tree)->right->left->data);
+    printf("Tree node 6: %d\n", (&Tree)->right->right->data);
     return 0;
 
 
